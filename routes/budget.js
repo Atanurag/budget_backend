@@ -33,7 +33,7 @@ router.post("/", auth, async (req, res) => {
     });
 
     await budget.save();
-    /
+
     res
       .status(201)
       .json({ status: "success", message: "Budget added", data: budget });
