@@ -24,7 +24,7 @@ router.post("/", auth, async (req, res) => {
       return res.status(200).json({
         status: "error",
         message:
-          "Transaction with this type, category, and date already exists",
+          "Transaction with this type, category, and date already exists.",
         data: existingTransaction,
       });
     }
@@ -50,7 +50,6 @@ router.post("/", auth, async (req, res) => {
     res.status(500).json({ status: "error", message: "Server error" });
   }
 });
-
 
 router.post("/summary", auth, async (req, res) => {
   try {

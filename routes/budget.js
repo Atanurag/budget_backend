@@ -33,7 +33,6 @@ router.post("/", auth, async (req, res) => {
     });
 
     await budget.save();
-
     res
       .status(201)
       .json({ status: "success", message: "Budget added", data: budget });
@@ -70,9 +69,6 @@ router.post("/budget-by-date", auth, async (req, res) => {
   }
 });
 
-// @route   GET /api/budgets/:id
-// @desc    Get a specific budget by ID
-// @access  Private
 router.get("/:id", auth, async (req, res) => {
   try {
     const budget = await Budget.findById(req.params.id);
