@@ -60,7 +60,7 @@ router.post("/login", async (req, res) => {
       email: user.email,
     };
 
-    const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "24h" });
+    const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "48h" });
 
     res.json({ status: "success", token, user: payload });
   } catch (err) {
