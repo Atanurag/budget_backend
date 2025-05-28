@@ -81,10 +81,10 @@ Render.com for deployment hosting
 
 ### 4. Folder Structure
 
-src/
-├── models/          
-├── routes/          
-├── middleware/      
-├── db.js         
-└── index.js        
+src/        
+├── models/                  
+├── routes/                
+├── middleware/            
+├── db.js                 
+└── index.js              
 
