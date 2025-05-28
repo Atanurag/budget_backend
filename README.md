@@ -1,6 +1,6 @@
 # Personal Budget Tracker – Backend (Node.js + Express + MongoDB)
 
-This is the backend API for the **Personal Budget Tracker** application. It handles user authentication, transaction management, and budget tracking with data stored in MongoDB Atlas.
+This is the backend API for the **Personal Budget Tracker** application. It handles user authentication, transaction management, and budget tracking with data storing in MongoDB Atlas.
 
 ---
 
