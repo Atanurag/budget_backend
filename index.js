@@ -23,7 +23,7 @@ app.use("/api/transaction", transactionRoutes);
 app.use("/api/budget", budgetRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the User API");
+  res.send("Welcome to the Budget Backend API");
 });
 
 const PORT = process.env.PORT || 3000;
