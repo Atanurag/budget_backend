@@ -17,9 +17,9 @@ You can use the following test user credentials to log in and test the API:
 
 | Email              | Password  |
 |--------------------|-----------|
-| demo@budget.com     | demo123   |
-| testuser@example.com| test123   |
-| user1@budget.com    | password1 |
+| a@email.com     | 1234   |
+| b@email.com| 1234   |
+| c@email.com   | 1234 |
 
 ---
 
@@ -58,5 +58,33 @@ You can use the following test user credentials to log in and test the API:
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/yourusername/personal-budget-tracker-backend.git
-cd personal-budget-tracker-backend
+git clone https://github.com/Atanurag/budget_backend.git
+cd budget_backend
+npm install (install dependencies)
+node index.js (run app)
+```
+### 2. Assumptions
+Each user has one budget per month.
+
+JWT token must be included in Authorization: Bearer <token> header for all protected routes.
+
+No user registration or password reset API as per requirements.
+
+### 3. Acknowledgements
+Express.js for backend routing and middleware
+
+Mongoose ODM for MongoDB
+
+jsonwebtoken for JWT authentication
+
+Render.com for deployment hosting
+
+### 4. Folder Structure
+
+src/
+├── models/          
+├── routes/          
+├── middleware/      
+├── db.js         
+└── index.js        
+
