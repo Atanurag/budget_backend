@@ -65,6 +65,8 @@ pass: @Hello123
 
 ### 1. Clone the Repo
 ```bash
+Ensure Node.js is installed
+If Node.js is not installed, download and install it from: https://nodejs.org/
 git clone https://github.com/Atanurag/budget_backend.git
 cd budget_backend
 npm install (install dependencies)
