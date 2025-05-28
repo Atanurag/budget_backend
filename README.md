@@ -21,6 +21,13 @@ You can use the following test user credentials to log in and test the API:
 | b@email.com| 1234   |
 | c@email.com   | 1234 |
 
+
+mongoDB Atlas login
+email: xisiw88639@daxiake.com
+pass: @Hello123
+
+
+
 ---
 
 ## ✨ Features
