@@ -37,7 +37,7 @@ router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
     if (!email || !password)
-      return res.status(400).json({
+      return res.status(200).json({
         message: "Please provide email and password",
         status: "error",
       });
@@ -45,13 +45,13 @@ router.post("/login", async (req, res) => {
     const user = await User.findOne({ email });
     if (!user)
       return res
-        .status(400)
+        .status(200)
         .json({ message: "Invalid credentials", status: "error" });
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch)
       return res
-        .status(400)
+        .status(200)
         .json({ message: "Invalid credentials", status: "error" });
 
     const payload = {
